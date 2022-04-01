@@ -1,0 +1,1 @@
+CREATE NONCLUSTERED INDEX NonClusteredIndex_Transaction ON [Transaction] (DateOfTransaction)WITH (ONLINE = ON , FILLFACTOR=90)SELECT * FROM [TRANSACTION]WHERE DateOfTransaction = '2021-11-20' AND Amount> 500
